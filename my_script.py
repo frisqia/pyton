@@ -98,17 +98,17 @@ for huruf in data_str:
     print(huruf) #saya ganteng abies menjadi horizontal
 print("akhir dari program")
 
-#while loop
-angka = 10
-while angka > 5:
-    print("cia cantik") #akan berjalan terus karena dia true maka akan berjalan terus
-print("cukup")
-angka = 0
-while angka < 5:
-    angka += 1
-    print(f"angka sekarang ->{angka}") #cia cantik,angka sekarang ->2,cia cantik,angka sekarang ->3,cia cantik,angka sekarang ->4,cia cantik,angka sekarang ->5,cia cantik
-    print("cia cantik") 
-print("cukup")
+# #while loop
+# angka = 10
+# while angka > 5:
+#     print("cia cantik") #akan berjalan terus karena dia true maka akan berjalan terus
+# print("cukup")
+# angka = 0
+# while angka < 5:
+#     angka += 1
+#     print(f"angka sekarang ->{angka}") #cia cantik,angka sekarang ->2,cia cantik,angka sekarang ->3,cia cantik,angka sekarang ->4,cia cantik,angka sekarang ->5,cia cantik
+#     print("cia cantik") 
+# print("cukup")
 
 #continue, pass, break
 #pass -> berfungsi sebagai dummy, tidak akan di eksekusi
@@ -167,16 +167,53 @@ while True:
 print("akhir while")
 
 #ganjil saja
+print("awal while")
+sisi = 10
 count = 1
+spasi = int(sisi/2)
+print(spasi)
 while True:
     if (count%2): 
+        print(" "*spasi,"+",*count)
+        spasi -= 1
         count += 1
-        continue #akan kembali ke atas jika ganjil
-    print("*"*count)
-    count += 1
+    else:
+        count += 1
+        continue
     if count > sisi:
-        break # akan berhenti jika coun melebihi sisi
+        break # akan berhenti jika count melebihi sisi
 print("akhir ganjil")
 
+#List
+#kumpulan data number
+data_angka = [1,2,3]
+print(data_angka)
 
-    
+#kumpulang data string
+data_str = ["cia", "jojo", "ilham"]
+print(data_str)
+
+#kumpulan data boolean
+data_bool =[True,False, True]
+print(data_bool)
+
+#kumpulan campuran
+data_mix = [1,"ayam",2, "japri", "jaja",True]
+print(data_mix)
+
+# alternatif membuat list
+data_range = range(0,10) #range(0, 10)
+print(data_range)
+data_list = list(data_range)
+print(data_list) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#list denan for loop
+dataListFror = [i **2 for i in range(0,10)] 
+print(dataListFror) #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+#list pakai for if
+listForIf =[i for i in range(0,10) if i != 5]
+print(listForIf) #[0, 1, 2, 3, 4, 6, 7, 8, 9]
+
+listForIf =[i for i in range(0,10) if i%2 == 0]
+print(listForIf) #[0, 2, 4, 6, 8]
