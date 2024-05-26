@@ -73,7 +73,7 @@ data_c_double = c_double(10.5)
 print("data:", data_c_double)
 print("data:", data_c_double, ", bertipe:", type(data_c_double))
 
-#mengubah data integer ke float
+#mengubah tipe data
 data_int = 9
 print("data =", data_int, "type =", type(data_int))
 data_float = float(data_int)
@@ -82,3 +82,65 @@ data_bool = bool(data_int)
 print("data =", data_float, "type =", type(data_float))
 print("data =", data_str, "type =", type(data_str))
 print("data =", data_bool, "type =", type(data_bool))
+
+#data yang dimasukan pasti string
+data = input("Masukan data: ")
+print ("data =", data, "type =", type(data))
+
+#jika ingin mengambil int, maka
+data_int = int(input("masukan angka: "))
+print("data =", data_int, "type =", type(data_int))
+
+#jia mengambil float
+angka = float(input("masukan angka: "))
+print("data =", angka, "type =", type(angka))
+
+#boolean harus di jadikan ke integer terlebih dahulu
+biner = bool(int(input("masukan nilai boolean: ")))
+print("data = ", biner, "type =", type(biner))
+
+#operasi aritmatika
+a = 10
+b = 3
+
+#operasi tambah
+hasil = a + b
+print(a,"+", b, "=" , hasil)
+
+#operasi pengurangan
+hasil = a - b
+print(a,"-",b,"=" ,hasil)
+
+#perkalian
+hasil = a * b
+print(a, "*", b, "=", hasil)
+
+#pembagian
+hasil = a / b
+print(a,"/", b,"=", hasil)
+
+#eksponen (pangkat)
+hasil = a ** b
+print(a,"**", b, "=", hasil)
+
+#modulus/ sisa dari hasil pembagian (persen)
+hasil = a % b
+print(a, "%", b ,"=", hasil)
+
+#floor division (pembulatan hasil dari pembagian)
+hasil = a // b
+print(a, "//", b ,"=", hasil)
+
+#prioritas operasi
+x = 3
+y = 2
+z = 4
+
+hasil = x ** y * z + x / y - y % z // x
+print(x ,"**", y,"*", z,"+", x,"/", y, "-", y, "%", z, "//", x, "=", hasil) 
+
+#(x**y)*z+x/y-y%z//x =
+#(xy)*z+(x/y)-(y%z)//x =
+#((xy)*z)+(x/y)-((yz)//x) =
+#(xyz)+(xy)-(yzx) =
+#hasil
