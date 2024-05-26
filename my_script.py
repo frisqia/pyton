@@ -111,7 +111,7 @@ while angka < 5:
 print("cukup")
 
 #continue, pass, break
-pass -> berfungsi sebagai dummy, tidak akan di eksekusi
+#pass -> berfungsi sebagai dummy, tidak akan di eksekusi
 angka = 0
 while angka < 5:
     angka +=1
